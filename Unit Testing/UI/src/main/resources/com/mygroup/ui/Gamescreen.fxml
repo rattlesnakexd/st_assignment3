@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:id="vb" xmlns="http://javafx.com/javafx/17"
+      fx:controller="com.mygroup.ui.GameScreenController">
+    <Pane fx:id="header">
+        <ImageView fx:id="img" layoutX="500"/>
+    </Pane>
+    <BorderPane fx:id="grid_ext" style=" -fx-padding: 13px;">
+        <center>
+            <ScrollPane fx:id="scroller">
+                <Pane fx:id="grid_internal" BorderPane.alignment="CENTER"/>
+            </ScrollPane>
+        </center>
+    </BorderPane>
+
+    <HBox fx:id="bottombox" alignment="CENTER" spacing="40">
+        <Button fx:id="back_btn" onMouseClicked="#back" styleClass="gamebuttons" text="back" textAlignment="CENTER"/>
+        <Button fx:id="reset" styleClass="gamebuttons" text="Reset" textAlignment="CENTER" onMouseClicked="#reset"/>
+        <Button fx:id="save" styleClass="gamebuttons" text="Save" textAlignment="CENTER" onMouseClicked="#saveState"/>
+        <Button fx:id="start" styleClass="gamebuttons" text="Start" textAlignment="CENTER" onMouseClicked="#start"/>
+        <Button fx:id="clear" styleClass="gamebuttons" text="Clear" textAlignment="CENTER" onMouseClicked="#clear"/>
+        <Button fx:id="next" styleClass="gamebuttons" text="Next" textAlignment="CENTER" onMouseClicked="#next"/>
+        <Label fx:id="gen" styleClass="Generation" text="Generation:" textAlignment="CENTER"/>
+        <Label fx:id="generation" styleClass="Generation" text="0" textAlignment="CENTER"/>
+        <padding>
+            <Insets top="20.0"/>
+        </padding>
+    </HBox>
+
+    <HBox fx:id="speedZoom" alignment="CENTER">
+        <HBox alignment="CENTER" spacing="10" styleClass="slidercontainer" minHeight="50" minWidth="350">
+            <HBox alignment="CENTER" spacing="4">
+                <ImageView fx:id="zoom_img"/>
+                <Slider fx:id="zoombar" maxWidth="100"/>
+            </HBox>
+            <HBox alignment="CENTER" spacing="3">
+                <ImageView fx:id="speed_img"/>
+                <Slider fx:id="speedBar" maxWidth="100"/>
+            </HBox>
+        </HBox>
+        <padding>
+            <Insets top="20.0"/>
+        </padding>
+    </HBox>
+</VBox>
