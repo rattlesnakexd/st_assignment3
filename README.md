@@ -22,4 +22,9 @@ Linters can provide the following checks:
 3. Code smells
 4. Security checks
 
-
+The installation process is as following:
+1. Open your open-source project
+2. Run npm install eslint --save-dev
+3. Run npx eslint --init to initialize
+4. Then choose the types of checks needed and types of languages
+5. To check a specific file, run npx eslint (file-path)
