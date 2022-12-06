@@ -6,3 +6,25 @@ Team Meeting 1:
 Team Meeting 2:
 1. Reviwing the project
 2. Dividing the work
+
+Task 3:
+
+1. Linters:
+
+A linter is a tool that may be used to make your code better. Linters are not just used with JavaScript. However, I'd argue that most individuals researching linters are drawn to those that focus on JavaScript. The advantages are as following:
+1. Fewer production errors
+2. Code that is easier to read, maintain, and use consistently
+3. Enhance code quality
+
+Linters can provide the following checks:
+1. Syntax Errors
+2. Code standard adherence
+3. Code smells
+4. Security checks
+
+The installation process is as following:
+1. Open your open-source project
+2. Run npm install eslint --save-dev
+3. Run npx eslint --init to initialize
+4. Then choose the types of checks needed and types of languages
+5. To check a specific file, run npx eslint (file-path)
