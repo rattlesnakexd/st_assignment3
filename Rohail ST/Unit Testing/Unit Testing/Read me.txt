@@ -1,0 +1,6 @@
+Aoa!
+
+I followed a youtube tutorial on unit testing using jest. It cover a whole set of use cases where different type of 
+functions were tested and different types of values and objects were to be expected.
+
+Link to video : https://www.youtube.com/watch?v=7r4xVDI2vho&t=3419s
